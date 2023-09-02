@@ -21,7 +21,10 @@
     "paths": {
       "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],
-      "@types/*": ["types/*"]
+      "@customTypes/*": ["types/*"],
+      "@styles/*": ["styles/*"],
+      "@pages/*": ["pages/*"],
+      "@svg/*": ["svg/*"]
     },
 
     /* Linting */

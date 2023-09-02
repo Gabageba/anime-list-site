@@ -2,7 +2,8 @@
   "extends": ["stylelint-config-standard-scss", "stylelint-config-standard"],
   "customSyntax": "postcss-scss",
   "rules": {
-    "selector-class-pattern": "^[_a-z0-9]+(?:-[a-z0-9]+)*(?:__[a-z0-9]+(?:-[a-z0-9]+)*)?(?:--[a-z0-9]+(?:-[a-z0-9]+)*)?(?:\\[.+\\])?$",
+    "selector-class-pattern": "[a-z]+([A-Z][a-z0-9]+)*",
+    "scss/dollar-variable-pattern": "[a-z]+([A-Z][a-z0-9]+)*",
     "no-eol-whitespace": true,
     "indentation": 2,
     "no-missing-end-of-source-newline": true,
@@ -17,7 +18,7 @@
     "max-empty-lines": 1,
     "max-line-length": 80,
     "import-notation": "string",
-    "declaration-property-value-no-unknown": true,
+    "declaration-property-value-no-unknown": null,
     "at-rule-no-unknown": null
   }
 }

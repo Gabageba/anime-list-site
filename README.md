@@ -2,10 +2,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/Gabageba/react-vite-template">
-    <img src="public/vite.svg" alt="Logo" width="80" height="80">
+    <img src="public/logo.svg" alt="Logo" width="250">
   </a>
 
-<h1 align="center">Anime list</h3>
+[//]: # (<h1 align="center">Anime list</h1>)
 </div>
 
 <!-- ABOUT THE PROJECT -->

@@ -30,7 +30,10 @@ export default defineConfig({
     alias: {
       '@components': '/src/components',
       '@assets': '/src/assets',
-      '@types': '/src/types',
+      '@customTypes': '/src/types',
+      '@styles': '/src/styles',
+      '@pages': '/src/pages',
+      '@svg': '/src/svg',
     },
   },
 });

@@ -1,0 +1,28 @@
+@import "../../../styles/default_variables";
+
+.line {
+  border-bottom: 2px solid $mainColor;
+  margin-top: 6px;
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  &__active {
+    opacity: 1;
+  }
+}
+
+.name {
+  color: $white;
+  opacity: 0.4;
+  cursor: pointer;
+  font-weight: 600;
+
+  &__active {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+}
