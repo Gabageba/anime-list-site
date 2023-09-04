@@ -1,0 +1,65 @@
+@import "../../styles/default_variables";
+
+.italic {
+  font-style: italic;
+}
+
+.delete {
+  text-decoration: line-through;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.secondary {
+  opacity: 0.6;
+}
+
+.success {
+  color: $success;
+}
+
+.warning {
+  color: $warning;
+}
+
+.error {
+  color: $error;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.extraLight {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extraBold {
+  font-weight: 800;
+}
