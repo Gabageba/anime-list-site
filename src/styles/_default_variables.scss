@@ -1,12 +1,13 @@
 $white: #FFF;
 $background: #0B0C10;
+$subBackground: #0a0a0a;
 $mainColor: #4100FC;
 $success: #52c41a;
 $warning: #faad14;
 $error: #ff4d4f;
-
-%content-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+$h1FontSize: 32px;
+$h2FontSize: 24px;
+$h3FontSize: 19px;
+$h4FontSize: 16px;
+$h5FontSize: 13;
+$navigationFontSize: 18px;

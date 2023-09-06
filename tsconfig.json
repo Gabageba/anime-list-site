@@ -24,7 +24,8 @@
       "@customTypes/*": ["types/*"],
       "@styles/*": ["styles/*"],
       "@pages/*": ["pages/*"],
-      "@svg/*": ["svg/*"]
+      "@svg/*": ["svg/*"],
+      "@ui/*": ["ui/*"]
     },
 
     /* Linting */

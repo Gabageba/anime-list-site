@@ -12,6 +12,7 @@
 }
 
 .name {
+  font-size: $navigationFontSize;
   cursor: pointer;
 
   &:hover {

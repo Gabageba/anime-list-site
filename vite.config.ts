@@ -34,6 +34,7 @@ export default defineConfig({
       '@styles': '/src/styles',
       '@pages': '/src/pages',
       '@svg': '/src/svg',
+      '@ui': '/src/ui',
     },
   },
 });
