@@ -32,6 +32,7 @@ module.exports = {
       },
     ],
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'react/button-has-type': 'off',
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'react/react-in-jsx-scope': 'off',
     'react/no-unstable-nested-components': ['off', { allowAsProps: true }],
