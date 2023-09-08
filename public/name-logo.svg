@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416.02 112.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #4100fc;
+      }
+
+      .cls-3 {
+        font-family: Sifonn-Pro, Sifonn;
+        font-size: 96.32px;
+        letter-spacing: -.06em;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <text class="cls-3" transform="translate(0 84.04)"><tspan class="cls-1" x="0" y="0">CHECK</tspan><tspan class="cls-2" x="339.83" y="0">IT</tspan></text>
+  </g>
+</svg>
