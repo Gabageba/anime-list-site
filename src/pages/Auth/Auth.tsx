@@ -13,7 +13,7 @@ const Auth = () => {
       </Text>
       <Text type={Type.TITLE} level={2}>
         {t('authText')} <br />
-        <a href={import.meta.env.VITE_AUTH_LINK}>{t('enterWithShikimory')}</a>
+        <a href={import.meta.env.VITE_SHIKIMORI_AUTH_LINK}>{t('enterWithShikimory')}</a>
       </Text>
     </ContentCenter>
   );
