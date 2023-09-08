@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_AUTH_LINK: string;
+  readonly VITE_SHIKIMORI_AUTH_LINK: string;
 }
 
 interface ImportMeta {

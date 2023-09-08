@@ -1,13 +1,9 @@
 import './styles/index.scss';
 // import ContentWrapper from './ui/ContentWrapper/ContentWrapper.tsx';
-import Auth from '@pages/Auth/Auth.tsx';
+import AppRouter from '@components/routes/AppRouter.tsx';
 
 const App = () => {
-  return (
-    // <ContentWrapper>
-    <Auth />
-    // </ContentWrapper>
-  );
+  return <AppRouter />;
 };
 
 export default App;
