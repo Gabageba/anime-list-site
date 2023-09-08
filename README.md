@@ -1,11 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Gabageba/react-vite-template">
-    <img src="public/logo.svg" alt="Logo" width="250">
+  <a href="https://github.com/Gabageba/checkit">
+    <img src="public/name-logo.svg" alt="Logo" width="250">
   </a>
 
-[//]: # (<h1 align="center">Anime list</h1>)
+[//]: # (<h1 align="center">CHECKIT</h1>)
 </div>
 
 <!-- ABOUT THE PROJECT -->
@@ -36,7 +36,7 @@ This is an example of how you may run website to local machine
 ### Prerequisites
 
 1. Clone this repository: 
-   `git clone https://github.com/Gabageba/anime-list-site`
+   `git clone https://github.com/Gabageba/checkit.git`
 2. Run `npm install` or `yarn` to install dependencies
 
 ### Running
@@ -55,7 +55,7 @@ This is an example of how you may run website to local machine
 - [ ] Add manga list
 - [ ] Add novels list
 
-See the [open issues](https://github.com/Gabageba/anime-list-site/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Gabageba/checkit/issues) for a full list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
