@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Gabageba/checkit">
-    <img src="public/name-logo.svg" alt="Logo" width="250">
+    <img src="checkit-web/public/name-logo.svg" alt="Logo" width="250">
   </a>
 
 [//]: # (<h1 align="center">CHECKIT</h1>)

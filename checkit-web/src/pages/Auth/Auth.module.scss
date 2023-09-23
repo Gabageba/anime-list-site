@@ -1,0 +1,22 @@
+@import "../../styles/default_variables";
+
+.auth {
+  position: relative;
+  gap: 60px;
+  text-align: center;
+  background: url("../..../assets/auth-bg.png");
+  line-height: 40px;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  a {
+    color: $mainColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
