@@ -6,10 +6,10 @@
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint .. --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "fix" : "eslint .. --ext ts,tsx --fix ",
-    "prepare": "cd .. && husky install checkit-web/.husky",
+    "fix": "eslint .. --ext ts,tsx --fix ",
     "preview": "vite preview --port 3000",
-    "start": "vite"
+    "start": "vite",
+    "prepare": "cd .. && husky install checkit-web/.husky"
   },
   "lint-staged": {
     "*.scss": [
@@ -55,7 +55,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^14.0.0",
     "postcss-scss": "^4.0.7",
     "prettier": "3.0.2",
