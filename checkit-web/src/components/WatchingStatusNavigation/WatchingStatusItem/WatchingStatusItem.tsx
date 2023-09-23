@@ -1,8 +1,8 @@
 import type { Dispatch, FC, SetStateAction } from 'react';
 import styles from './WatchingStatusItem.module.scss';
-import type { IWatchingStatuses } from '../../../types/statuses.ts';
-import Text from '../../../ui/Text/Text.tsx';
-import { Type } from '../../../types/text.ts';
+import type { IWatchingStatuses } from '../../../types/statuses';
+import Text from '../../../ui/Text/Text';
+import { Type } from '../../../types/text';
 
 interface StatusItemProps {
   status: IWatchingStatuses;

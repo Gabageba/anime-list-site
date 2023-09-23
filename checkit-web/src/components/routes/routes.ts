@@ -1,7 +1,7 @@
 import type { FC } from 'react';
-import { routes } from '../../const/route.ts';
-import Auth from '../../pages/Auth/Auth.tsx';
-import Main from '../../pages/Main/Main.tsx';
+import routes from '../../const/route';
+import Auth from '../../pages/Auth/Auth';
+import Main from '../../pages/Main/Main';
 
 interface Routes {
   path: string;

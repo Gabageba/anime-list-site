@@ -1,12 +1,12 @@
-import { Type } from '../../types/text.ts';
-import Text from '../../ui/Text/Text.tsx';
-import ContentCenter from '../../ui/ContentCenter/ContentCenter.tsx';
-import styles from './Auth.module.scss';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import { useAppDispatch } from '../../hooks/redux.ts';
-import { saveShikimoryAuthCodeToStorage } from '../../store/reducers/auth/AuthActionCreator.ts';
+import { useAppDispatch } from '@hooks/redux.ts';
+import { saveShikimoryAuthCodeToStorage } from '@store/reducers/auth/AuthActionCreator';
+import { Type } from '../../types/text';
+import Text from '../../ui/Text/Text';
+import ContentCenter from '../../ui/ContentCenter/ContentCenter';
+import styles from './Auth.module.scss';
 
 const Auth = () => {
   const { t } = useTranslation();

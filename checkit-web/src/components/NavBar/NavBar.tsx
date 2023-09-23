@@ -1,18 +1,16 @@
-import MoreSvg from '../../svg/MoreSvg.tsx';
-import LogoSvg from '../../svg/LogoSvg.tsx';
+import MoreSvg from '../../svg/MoreSvg';
+import LogoSvg from '../../svg/LogoSvg';
 import styles from './NavBar.module.scss';
 
-const NavBar = () => {
-  return (
-    <div className={styles.navBar}>
-      <div className={styles.more}>
-        <MoreSvg />
-      </div>
-      <div className={styles.logo}>
-        <LogoSvg />
-      </div>
+const NavBar = () => (
+  <div className={styles.navBar}>
+    <div className={styles.more}>
+      <MoreSvg />
     </div>
-  );
-};
+    <div className={styles.logo}>
+      <LogoSvg />
+    </div>
+  </div>
+);
 
 export default NavBar;

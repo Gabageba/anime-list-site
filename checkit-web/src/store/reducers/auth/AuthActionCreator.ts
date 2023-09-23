@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import type { IToken } from '../../../types/token.ts';
-import { getErrorMessage } from '../../../utils/functions.ts';
+import { getErrorMessage } from '@utils/functions';
+import type { IToken } from '../../../types/token';
 
 const $token = axios.create({
   baseURL: import.meta.env.VITE_SHIKIMORI_OAUTH,

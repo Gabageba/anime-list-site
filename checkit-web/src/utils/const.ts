@@ -1,4 +1,4 @@
-import type { IWatchingStatuses } from '../types/statuses.ts';
+import type { IWatchingStatuses } from '../types/statuses';
 
 export const WATCHING_STATUSES: IWatchingStatuses[] = [
   { id: 0, code: 'completed', name: 'Просмотрено' },

@@ -1,14 +1,12 @@
-import NavBar from '../NavBar/NavBar.tsx';
+import NavBar from '../NavBar/NavBar';
 import styles from './Header.module.scss';
-import WatchingStatusNavigation from '../WatchingStatusNavigation/WatchingStatusNavigation.tsx';
+import WatchingStatusNavigation from '../WatchingStatusNavigation/WatchingStatusNavigation';
 
-const Header = () => {
-  return (
-    <div className={styles.header}>
-      <NavBar />
-      <WatchingStatusNavigation />
-    </div>
-  );
-};
+const Header = () => (
+  <div className={styles.header}>
+    <NavBar />
+    <WatchingStatusNavigation />
+  </div>
+);
 
 export default Header;

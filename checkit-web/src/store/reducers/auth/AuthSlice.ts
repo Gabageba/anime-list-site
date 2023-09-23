@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { IToken } from '../../../types/token.ts';
+import type { IToken } from '../../../types/token';
 import {
   getShikimoryAuthCodeFromStorage,
   getShikimoryToken,
@@ -7,7 +7,7 @@ import {
   refreshShikimoryToken,
   saveShikimoryAuthCodeToStorage,
   saveShikimoryTokenToStorage,
-} from './AuthActionCreator.ts';
+} from './AuthActionCreator';
 
 interface AuthState {
   shikimoryToken: IToken | null;

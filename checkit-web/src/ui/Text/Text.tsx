@@ -1,8 +1,8 @@
 import type { FC, PropsWithChildren, ReactNode } from 'react';
-import type { Decoration, Level, Style, Weight } from '../../types/text.ts';
-import { Type } from '../../types/text.ts';
-import styles from './Text.module.scss';
 import cn from 'classnames';
+import type { Decoration, Level, Style, Weight } from '../../types/text';
+import { Type } from '../../types/text';
+import styles from './Text.module.scss';
 
 interface TextProps {
   type?: Type;

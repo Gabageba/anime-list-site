@@ -1,11 +1,9 @@
-import Header from '../../components/Header/Header.tsx';
+import Header from '../../components/Header/Header';
 
-const Main = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
-};
+const Main = () => (
+  <div>
+    <Header />
+  </div>
+);
 
 export default Main;

@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import App from './App';
 import './styles/index.scss';
-import './i18n.ts';
-import { BrowserRouter } from 'react-router-dom';
-import { setupStore } from './store/store.ts';
-import { Provider } from 'react-redux';
+import './i18n';
+import { setupStore } from './store/store';
 
 const store = setupStore();
 

@@ -9,7 +9,6 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -37,9 +36,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["checkit-web/src/**/*.ts",
-    "checkit-web/src/**/*.d.ts",
-    "checkit-web/src/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json"}]
 }

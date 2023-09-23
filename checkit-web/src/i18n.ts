@@ -19,8 +19,8 @@ i18n
     },
   });
 
-i18n.services?.formatter?.add('DATE_HUGE', (value, lng = 'ru') => {
-  return DateTime.fromJSDate(value).setLocale(lng).toLocaleString(DateTime.DATE_HUGE);
-});
+i18n.services?.formatter?.add('DATE_HUGE', (value, lng = 'ru') =>
+  DateTime.fromJSDate(value).setLocale(lng).toLocaleString(DateTime.DATE_HUGE),
+);
 
 export default i18n;

@@ -9,8 +9,12 @@ const ChangeLanguage = () => {
 
   return (
     <div>
-      <button onClick={() => changeLanguage('en')}>EN</button>
-      <button onClick={() => changeLanguage('ru')}>RU</button>
+      <button type="button" onClick={() => changeLanguage('en')}>
+        EN
+      </button>
+      <button type="button" onClick={() => changeLanguage('ru')}>
+        RU
+      </button>
     </div>
   );
 };

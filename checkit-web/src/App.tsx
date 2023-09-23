@@ -1,17 +1,15 @@
 import './styles/index.scss';
 import { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from './hooks/redux.ts';
+import { useAppDispatch, useAppSelector } from './hooks/redux';
 import {
   getShikimoryAuthCodeFromStorage,
   getShikimoryToken,
   getShikimoryTokenFromStorage,
   refreshShikimoryToken,
-} from './store/reducers/auth/AuthActionCreator.ts';
-import AppRouter from './components/routes/AppRouter.tsx';
-import Auth from './pages/Auth/Auth.tsx';
+} from './store/reducers/auth/AuthActionCreator';
 
 const App = () => {
-  const { shikimoryToken, shikimoryAuthCode, error } = useAppSelector((state) => state.authReducer);
+  const { shikimoryToken, shikimoryAuthCode } = useAppSelector((state) => state.authReducer);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -30,7 +28,7 @@ const App = () => {
     }
   }, [shikimoryToken, shikimoryAuthCode, dispatch]);
 
-  return <>{error ? <div>{error}</div> : shikimoryToken ? <AppRouter /> : <Auth />}</>;
+  return <>adf</>;
 };
 
 export default App;
