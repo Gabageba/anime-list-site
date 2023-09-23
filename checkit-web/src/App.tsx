@@ -28,7 +28,7 @@ const App = () => {
     }
   }, [shikimoryToken, shikimoryAuthCode, dispatch]);
 
-  return <>aasdfdfsdf</>;
+  return <>aasdfdfsфвыаdf</>;
 };
 
 export default App;
