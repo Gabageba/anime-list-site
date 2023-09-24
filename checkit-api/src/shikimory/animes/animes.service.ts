@@ -6,10 +6,11 @@ import { ConfigService } from '@nestjs/config';
 @Injectable()
 export class AnimesService {
   constructor(private readonly configService: ConfigService) {}
-  //TODO: add env
-  async findAll(): Promise<IAnimeShort[]> {
+
+  async findAll(page: number, limit: number): Promise<IAnimeShort[]> {
     const { data } = await axios.get(
       this.configService.get('SHIKIMORY_URL') + '/animes',
+      { params: { page, limit } },
     );
     return data;
   }
