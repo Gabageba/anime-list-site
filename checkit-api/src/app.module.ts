@@ -1,19 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersModule } from './users/users.module';
-import { AnimeListsModule } from './shikimory/anime-lists/anime-lists.module';
-import { MangaListsModule } from './shikimory/manga-lists/manga-lists.module';
-import { NovelListsModule } from './shikimory/novel-lists/novel-lists.module';
-import { AuthModule } from './shikimory/auth/auth.module';
-import { AnimesModule } from './shikimory/animes/animes.module';
-import { MangasModule } from './shikimory/mangas/mangas.module';
-import { NovelsModule } from './shikimory/novels/novels.module';
-import { SettingsModule } from './settings/settings.module';
-import { NotificationsModule } from './notifications/notifications.module';
-import { SubscriptionsModule } from './subscriptions/subscriptions.module';
-import { ListsModule as ShikimoryListModule } from './shikimory/lists/lists.module';
-import { ListsModule as CheckitListsModule } from './checkit/lists/lists.module';
 
 @Module({
   imports: [
@@ -32,19 +19,6 @@ import { ListsModule as CheckitListsModule } from './checkit/lists/lists.module'
       }),
       inject: [ConfigService],
     }),
-    UsersModule,
-    AnimeListsModule,
-    MangaListsModule,
-    NovelListsModule,
-    AuthModule,
-    AnimesModule,
-    MangasModule,
-    NovelsModule,
-    SettingsModule,
-    NotificationsModule,
-    SubscriptionsModule,
-    ShikimoryListModule,
-    CheckitListsModule,
   ],
   controllers: [],
   providers: [],
