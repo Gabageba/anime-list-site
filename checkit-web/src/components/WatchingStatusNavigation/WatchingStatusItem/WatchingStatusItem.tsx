@@ -10,7 +10,11 @@ interface StatusItemProps {
   setActive: Dispatch<SetStateAction<IWatchingStatuses>>;
 }
 
-const WatchingStatusItem: FC<StatusItemProps> = ({ status, active, setActive }) => {
+const WatchingStatusItem: FC<StatusItemProps> = ({
+  status,
+  active,
+  setActive,
+}) => {
   const isActive = active.id === status.id;
   return (
     <li onClick={() => setActive(status)}>

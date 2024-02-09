@@ -10,7 +10,12 @@ const WatchingStatusNavigation = () => {
   return (
     <ul className={styles.status}>
       {WATCHING_STATUSES.map((status) => (
-        <WatchingStatusItem status={status} active={active} setActive={setActive} key={status.id} />
+        <WatchingStatusItem
+          status={status}
+          active={active}
+          setActive={setActive}
+          key={status.id}
+        />
       ))}
     </ul>
   );

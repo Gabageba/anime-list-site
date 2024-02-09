@@ -9,7 +9,9 @@ import {
 } from './store/reducers/auth/AuthActionCreator';
 
 const App = () => {
-  const { shikimoryToken, shikimoryAuthCode } = useAppSelector((state) => state.authReducer);
+  const { shikimoryToken, shikimoryAuthCode } = useAppSelector(
+    (state) => state.authReducer,
+  );
   const dispatch = useAppDispatch();
 
   useEffect(() => {

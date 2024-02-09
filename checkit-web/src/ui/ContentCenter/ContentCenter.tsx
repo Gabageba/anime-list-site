@@ -12,6 +12,8 @@ const ContentCenter: FC<PropsWithChildren<ContentCenterProps>> = ({
   size = 'content',
   children,
   className,
-}) => <div className={cn(styles.center, styles[size], className)}>{children}</div>;
+}) => (
+  <div className={cn(styles.center, styles[size], className)}>{children}</div>
+);
 
 export default ContentCenter;

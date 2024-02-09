@@ -32,7 +32,10 @@ export const authSlice = createSlice({
     },
   },
   extraReducers: {
-    [getShikimoryToken.fulfilled.type]: (state, action: PayloadAction<IToken>) => {
+    [getShikimoryToken.fulfilled.type]: (
+      state,
+      action: PayloadAction<IToken>,
+    ) => {
       state.shikimoryToken = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -40,11 +43,17 @@ export const authSlice = createSlice({
     [getShikimoryToken.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [getShikimoryToken.rejected.type]: (state, action: PayloadAction<string>) => {
+    [getShikimoryToken.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },
-    [refreshShikimoryToken.fulfilled.type]: (state, action: PayloadAction<IToken>) => {
+    [refreshShikimoryToken.fulfilled.type]: (
+      state,
+      action: PayloadAction<IToken>,
+    ) => {
       state.shikimoryToken = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -52,11 +61,17 @@ export const authSlice = createSlice({
     [refreshShikimoryToken.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [refreshShikimoryToken.rejected.type]: (state, action: PayloadAction<string>) => {
+    [refreshShikimoryToken.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },
-    [getShikimoryTokenFromStorage.fulfilled.type]: (state, action: PayloadAction<IToken>) => {
+    [getShikimoryTokenFromStorage.fulfilled.type]: (
+      state,
+      action: PayloadAction<IToken>,
+    ) => {
       state.shikimoryToken = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -64,11 +79,17 @@ export const authSlice = createSlice({
     [getShikimoryTokenFromStorage.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [getShikimoryTokenFromStorage.rejected.type]: (state, action: PayloadAction<string>) => {
+    [getShikimoryTokenFromStorage.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },
-    [saveShikimoryTokenToStorage.fulfilled.type]: (state, action: PayloadAction<IToken>) => {
+    [saveShikimoryTokenToStorage.fulfilled.type]: (
+      state,
+      action: PayloadAction<IToken>,
+    ) => {
       state.shikimoryToken = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -76,11 +97,17 @@ export const authSlice = createSlice({
     [saveShikimoryTokenToStorage.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [saveShikimoryTokenToStorage.rejected.type]: (state, action: PayloadAction<string>) => {
+    [saveShikimoryTokenToStorage.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },
-    [getShikimoryAuthCodeFromStorage.fulfilled.type]: (state, action: PayloadAction<string>) => {
+    [getShikimoryAuthCodeFromStorage.fulfilled.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.shikimoryAuthCode = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -88,11 +115,17 @@ export const authSlice = createSlice({
     [getShikimoryAuthCodeFromStorage.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [getShikimoryAuthCodeFromStorage.rejected.type]: (state, action: PayloadAction<string>) => {
+    [getShikimoryAuthCodeFromStorage.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },
-    [saveShikimoryAuthCodeToStorage.fulfilled.type]: (state, action: PayloadAction<string>) => {
+    [saveShikimoryAuthCodeToStorage.fulfilled.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.shikimoryAuthCode = action.payload;
       state.isLoading = false;
       state.error = '';
@@ -100,7 +133,10 @@ export const authSlice = createSlice({
     [saveShikimoryAuthCodeToStorage.pending.type]: (state) => {
       state.isLoading = true;
     },
-    [saveShikimoryAuthCodeToStorage.rejected.type]: (state, action: PayloadAction<string>) => {
+    [saveShikimoryAuthCodeToStorage.rejected.type]: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.isLoading = false;
       state.error = action.payload;
     },

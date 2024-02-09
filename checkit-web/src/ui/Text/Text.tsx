@@ -36,7 +36,10 @@ const Text: FC<PropsWithChildren<TextProps>> = ({
     decoration !== 'default' && styles[decoration],
   );
 
-  const generateTitleByLevel = (currentClassName: string, clickHandler?: () => void): ReactNode => {
+  const generateTitleByLevel = (
+    currentClassName: string,
+    clickHandler?: () => void,
+  ): ReactNode => {
     switch (level) {
       case 2:
         return (
@@ -72,7 +75,10 @@ const Text: FC<PropsWithChildren<TextProps>> = ({
     }
   };
 
-  const generateTextByType = (currentClassName: string, clickHandler?: () => void): ReactNode => {
+  const generateTextByType = (
+    currentClassName: string,
+    clickHandler?: () => void,
+  ): ReactNode => {
     switch (type) {
       case Type.PARAGRAPH:
         return (
