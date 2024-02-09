@@ -1,0 +1,14 @@
+!.*
+node_modules
+.eslintrc.js
+.eslintignore
+.editorconfig
+*.config.js
+.husky
+.prettierignore
+.prettierrc
+*.json
+/build
+/dist
+yarn.lock
+package-lock.json
