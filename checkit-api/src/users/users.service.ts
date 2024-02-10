@@ -14,8 +14,13 @@ export class UsersService {
   ) {}
 
   async createUser(dto: CreateUserDto) {
-    const user = await this.userRepository.create(dto);
     const role = await this.roleService.getRoleByValue('USER');
+
+    if (!role) {
+      throw new HttpException('Роль не найдена', HttpStatus.NOT_FOUND);
+    }
+
+    const user = await this.userRepository.create(dto);
     await user.$set('roles', [role.id]);
     user.roles = [role];
     return user;
