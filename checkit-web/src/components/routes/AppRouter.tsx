@@ -1,19 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
-import { authRoutes } from './routes';
-import ContentWrapper from '../../ui/ContentWrapper/ContentWrapper';
+import { authRoutes, publicRoutes } from './routes';
 
 const AppRouter = () => (
   <Routes>
-    {authRoutes.map(({ path, Element }) => (
-      <Route
-        key={path}
-        path={path}
-        element={
-          <ContentWrapper>
-            <Element />
-          </ContentWrapper>
-        }
-      />
+    {authRoutes.map(({ path, Element, ...rest }) => (
+      <Route key={path} path={path} {...rest} element={<Element />} />
+    ))}
+    {publicRoutes.map(({ path, Element, ...rest }) => (
+      <Route key={path} path={path} {...rest} element={<Element />} />
     ))}
     {/* <Route path="*" element={<CosmeticsHygiene/>}/> */}
   </Routes>

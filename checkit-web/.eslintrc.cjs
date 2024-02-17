@@ -45,6 +45,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'import/no-extraneous-dependencies': ['error'],
     '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
     'react/no-unknown-property': ['error', {ignore: ['css']}],
     'react/require-default-props': 'off',
     'import/prefer-default-export': 'warn',

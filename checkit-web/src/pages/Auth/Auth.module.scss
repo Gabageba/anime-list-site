@@ -4,8 +4,10 @@
   position: relative;
   gap: 60px;
   text-align: center;
-  background: url("../..../assets/auth-bg.png");
+  background: url("../../assets/auth-bg.png");
   line-height: 40px;
+  width: 100%;
+  height: 100%;
 
   h1 {
     font-size: 40px;

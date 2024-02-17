@@ -1,6 +1,6 @@
 const routes = {
   MAIN: '/',
-  AUTH_ROUTE: '/authorization',
+  AUTH_ROUTE: '/auth',
 };
 
 export default routes;

@@ -1,39 +1,41 @@
 import type { FC, PropsWithChildren, ReactNode } from 'react';
 import cn from 'classnames';
-import type { Decoration, Level, Style, Weight } from '../../types/text';
-import { Type } from '../../types/text';
-import styles from './Text.module.scss';
+
+import { FontWeight } from '@ui/types';
+import styles from './styles.module.scss';
+import type { TextLevel } from './types';
+import { TextDecoration, TextStyle, TextType } from './types';
 
 interface TextProps {
-  type?: Type;
-  level?: Level;
+  type?: TextType;
+  level?: TextLevel;
   className?: string;
-  style?: Style;
-  weight?: Weight;
+  style?: TextStyle;
+  weight?: FontWeight;
   isItalic?: boolean;
-  decoration?: Decoration;
+  decoration?: TextDecoration;
   onClick?: () => void;
   // ellipsis?: boolean | IsEllipsis;
 }
 
 const Text: FC<PropsWithChildren<TextProps>> = ({
-  type = Type.TEXT,
+  type = TextType.TEXT,
   className,
   level = 1,
-  style = 'default',
-  weight = 'regular',
+  style = TextStyle.DEFAULT,
+  weight = FontWeight.REGULAR,
   isItalic = false,
-  decoration = 'default',
+  decoration = TextDecoration.DEFAULT,
   onClick,
   // ellipsis = false,
   children,
 }) => {
   const classNames = cn(
     className,
-    style !== 'default' && styles[style],
+    style !== TextStyle.DEFAULT && styles[style],
     styles[weight],
     isItalic && 'italic',
-    decoration !== 'default' && styles[decoration],
+    decoration !== TextDecoration.DEFAULT && styles[decoration],
   );
 
   const generateTitleByLevel = (
@@ -80,16 +82,16 @@ const Text: FC<PropsWithChildren<TextProps>> = ({
     clickHandler?: () => void,
   ): ReactNode => {
     switch (type) {
-      case Type.PARAGRAPH:
+      case TextType.PARAGRAPH:
         return (
           <p className={currentClassName} onClick={clickHandler}>
             {children}
           </p>
         );
-      case Type.TITLE: {
+      case TextType.TITLE: {
         return generateTitleByLevel(currentClassName, clickHandler);
       }
-      case Type.TEXT:
+      case TextType.TEXT:
       default:
         return (
           <span className={currentClassName} onClick={clickHandler}>
