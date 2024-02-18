@@ -1,10 +1,10 @@
 import type { FC, PropsWithChildren, ReactNode } from 'react';
 import cn from 'classnames';
-
-import { FontWeight } from '@ui/types';
+import type { FontWeight } from '@ui/types';
+import { FONT_WEIGHT } from '@ui/types';
 import styles from './styles.module.scss';
-import type { TextLevel } from './types';
-import { TextDecoration, TextStyle, TextType } from './types';
+import type { TextLevel, TextDecoration, TextStyle, TextType } from './types';
+import { TEXT_DECORATION, TEXT_STYLE, TEXT_TYPE } from './types';
 
 interface TextProps {
   type?: TextType;
@@ -19,23 +19,23 @@ interface TextProps {
 }
 
 const Text: FC<PropsWithChildren<TextProps>> = ({
-  type = TextType.TEXT,
+  type = TEXT_TYPE.TEXT,
   className,
   level = 1,
-  style = TextStyle.DEFAULT,
-  weight = FontWeight.REGULAR,
+  style = TEXT_STYLE.DEFAULT,
+  weight = FONT_WEIGHT.REGULAR,
   isItalic = false,
-  decoration = TextDecoration.DEFAULT,
+  decoration = TEXT_DECORATION.DEFAULT,
   onClick,
   // ellipsis = false,
   children,
 }) => {
   const classNames = cn(
     className,
-    style !== TextStyle.DEFAULT && styles[style],
+    style !== TEXT_STYLE.DEFAULT && styles[style],
     styles[weight],
     isItalic && 'italic',
-    decoration !== TextDecoration.DEFAULT && styles[decoration],
+    decoration !== TEXT_DECORATION.DEFAULT && styles[decoration],
   );
 
   const generateTitleByLevel = (
@@ -82,16 +82,16 @@ const Text: FC<PropsWithChildren<TextProps>> = ({
     clickHandler?: () => void,
   ): ReactNode => {
     switch (type) {
-      case TextType.PARAGRAPH:
+      case TEXT_TYPE.PARAGRAPH:
         return (
           <p className={currentClassName} onClick={clickHandler}>
             {children}
           </p>
         );
-      case TextType.TITLE: {
+      case TEXT_TYPE.TITLE: {
         return generateTitleByLevel(currentClassName, clickHandler);
       }
-      case TextType.TEXT:
+      case TEXT_TYPE.TEXT:
       default:
         return (
           <span className={currentClassName} onClick={clickHandler}>

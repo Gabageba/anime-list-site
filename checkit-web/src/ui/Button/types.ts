@@ -1,8 +1,11 @@
-export enum ButtonType {
-  'SUBMIT' = 'submit',
-  'BUTTON' = 'button',
-  'RESET' = 'reset',
-}
+import type { EnumLiteralsOf } from '@utils/enumLiteralsOf';
+
+export const BUTTON_TYPE = {
+  SUBMIT: 'submit',
+  BUTTON: 'button',
+  RESET: 'reset',
+} as const;
+export type ButtonType = EnumLiteralsOf<typeof BUTTON_TYPE>;
 
 export enum ButtonStyle {
   'FILLED' = 'filled',

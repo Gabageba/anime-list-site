@@ -1,6 +1,6 @@
 import type { FC, PropsWithChildren } from 'react';
 import cn from 'classnames';
-import { ContentSize } from '@ui/ContentCenter/types';
+import { CONTENT_SIZE, type ContentSize } from '@ui/ContentCenter/types';
 import styles from './styles.module.scss';
 
 interface ContentCenterProps {
@@ -9,7 +9,7 @@ interface ContentCenterProps {
 }
 
 const ContentCenter: FC<PropsWithChildren<ContentCenterProps>> = ({
-  size = ContentSize.CONTENT,
+  size = CONTENT_SIZE.CONTENT,
   children,
   className,
 }) => (

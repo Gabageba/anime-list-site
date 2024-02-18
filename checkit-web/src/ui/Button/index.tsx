@@ -1,10 +1,11 @@
 import type { FC, PropsWithChildren } from 'react';
 import cn from 'classnames';
 // import type { Size } from '@ui/types';
+import type { ButtonType } from './types';
 import {
+  BUTTON_TYPE,
   // ButtonShape,
   ButtonStyle,
-  ButtonType,
 } from './types';
 import styles from './styles.module.scss';
 
@@ -22,7 +23,7 @@ interface ButtonProps {
 }
 
 const Button: FC<PropsWithChildren<ButtonProps>> = ({
-  type = ButtonType.BUTTON,
+  type = BUTTON_TYPE.BUTTON,
   className,
   children,
   style = ButtonStyle.FILLED,

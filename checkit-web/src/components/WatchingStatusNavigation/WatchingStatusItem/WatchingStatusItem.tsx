@@ -1,6 +1,6 @@
 import type { Dispatch, FC, SetStateAction } from 'react';
-import { TextStyle, TextType } from '@ui/Text/types';
-import { FontWeight } from '@ui/types';
+import { TEXT_STYLE, TEXT_TYPE } from '@ui/Text/types';
+import { FONT_WEIGHT } from '@ui/types';
 import styles from './WatchingStatusItem.module.scss';
 import type { IWatchingStatuses } from '../../../types/statuses';
 import Text from '../../../ui/Text';
@@ -20,9 +20,9 @@ const WatchingStatusItem: FC<StatusItemProps> = ({
   return (
     <li onClick={() => setActive(status)}>
       <Text
-        type={TextType.TEXT}
-        weight={FontWeight.SEMI_BOLD}
-        style={isActive ? TextStyle.DEFAULT : TextStyle.SECONDARY}
+        type={TEXT_TYPE.TEXT}
+        weight={FONT_WEIGHT.SEMI_BOLD}
+        style={isActive ? TEXT_STYLE.DEFAULT : TEXT_STYLE.SECONDARY}
         className={styles.name}
       >
         {status.name}

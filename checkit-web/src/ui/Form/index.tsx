@@ -1,3 +1,5 @@
+import Button from '@ui/Button';
+import { BUTTON_TYPE } from '@ui/Button/types';
 import Flex from '@ui/Flex';
 import type { FC, FormEvent, PropsWithChildren } from 'react';
 
@@ -16,6 +18,7 @@ const Form: FC<PropsWithChildren<FormProps>> = ({ children, onSubmit }) => {
     <form onSubmit={onOk}>
       {children}
       <Flex>
+        <Button type={BUTTON_TYPE.SUBMIT}>asdf</Button>
         <button type="submit">asdf</button>
         <button type="button">asdf</button>
       </Flex>
