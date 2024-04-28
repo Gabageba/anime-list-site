@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 import routes from '../../const/route';
-import Auth from '../../pages/Auth/Auth';
-import Main from '../../pages/Main/Main';
+import Main from '../../pages/Main';
 
 interface Routes {
   path: string;
@@ -17,10 +16,4 @@ export const authRoutes: Routes[] = [
   },
 ];
 
-export const publicRoutes: Routes[] = [
-  {
-    path: routes.AUTH_ROUTE,
-    Element: Auth,
-    name: 'Авторизация',
-  },
-];
+export const publicRoutes: Routes[] = [];

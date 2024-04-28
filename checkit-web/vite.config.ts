@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import legacy from '@vitejs/plugin-legacy';
 import checker from 'vite-plugin-checker';
+import babel from 'vite-plugin-babel';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,6 +17,19 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    babel({
+      babelConfig: {
+        presets: [
+          [
+            '@babel/preset-react',
+            { runtime: 'automatic', importSource: '@emotion/react' },
+          ],
+        ],
+        babelrc: false,
+        configFile: false,
+        plugins: ['@emotion/babel-plugin'],
+      },
+    }),
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
@@ -26,6 +40,13 @@ export default defineConfig({
       },
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
   resolve: {
     alias: {
       '@components': '/src/components',

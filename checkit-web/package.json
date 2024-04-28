@@ -14,31 +14,32 @@
     "storybook": "storybook dev -p 6006"
   },
   "lint-staged": {
-    "*.scss": [
-      "stylelint --fix"
-    ],
     "*.ts?(x)": [
       "eslint --fix",
+      "stylelint --fix --allow-empty-input",
       "prettier --write --ignore-unknown"
     ],
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
-    "@types/react-redux": "^7.1.26",
+    "@babel/preset-react": "^7.23.3",
+    "@emotion/babel-preset-css-prop": "^11.11.0",
+    "@emotion/react": "^11.11.3",
+    "@reduxjs/toolkit": "^2.2.1",
+    "@types/react-redux": "^7.1.33",
     "@vitejs/plugin-legacy": "^4.1.1",
-    "axios": "^1.5.0",
+    "axios": "^1.6.7",
     "classnames": "^2.3.2",
-    "i18next": "^23.4.9",
-    "i18next-browser-languagedetector": "^7.1.0",
-    "i18next-http-backend": "^2.2.2",
-    "luxon": "^3.4.3",
+    "i18next": "^23.8.3",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-http-backend": "^2.4.3",
+    "luxon": "^3.4.4",
+    "postcss-styled-syntax": "^0.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^13.2.2",
+    "react-i18next": "^13.5.0",
     "react-redux": "^8.1.2",
-    "react-router-dom": "^6.15.0",
-    "sass": "^1.66.1"
+    "react-router-dom": "^6.22.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.3.3",
@@ -69,15 +70,15 @@
     "eslint-plugin-storybook": "^0.8.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.0",
-    "postcss-scss": "^4.0.7",
     "prettier": "3.0.2",
     "sort-package-json": "^2.5.1",
     "storybook": "^8.0.9",
-    "stylelint": "^15.10.3",
-    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint": "^16.4.0",
+    "stylelint-config-standard": "^36.0.0",
     "terser": "^5.19.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
+    "vite-plugin-babel": "^1.2.0",
     "vite-plugin-checker": "^0.6.1"
   }
 }
